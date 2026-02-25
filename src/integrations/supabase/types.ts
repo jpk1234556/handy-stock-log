@@ -151,6 +151,13 @@ export type Database = {
             referencedRelation: "items"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "stock_history_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
         ]
       }
     }
